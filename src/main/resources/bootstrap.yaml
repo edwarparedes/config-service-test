@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri:
+          #search-paths: config-data - Solo en caso que este dentro de la carpeta config-data del repositorio git
+  application:
+    name: config-service
